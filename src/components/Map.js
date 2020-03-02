@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import L from 'leaflet';
 import {
   Map as Maps, TileLayer, Marker, Popup,
@@ -8,7 +8,7 @@ import { Label } from 'semantic-ui-react';
 import { connect } from 'react-redux';
 import { getMaskData, getCoordinates, getNowSelectData } from '../redux/actions';
 
-class Map extends Component {
+class Map extends PureComponent {
 
   componentDidMount() {
     this.props.getMaskData();
@@ -100,7 +100,7 @@ class Map extends Component {
             {lists}
           </MarkerClusterGroup>
           <Marker position={center} icon={myIcon}>
-            <Popup>
+            <Popup data-testid="nowPosition">
               你的所在位置！！！
             </Popup>
           </Marker>

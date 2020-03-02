@@ -28,7 +28,6 @@ export const getTargetPosition = (input) => (dispatch, getState) => {
   const api = `https://nominatim.openstreetmap.org/?q=${input}&format=json&limit=1`;
   axios.get(api)
   .then((res) => {
-    console.log(res.data)
     dispatch({
       type: GET_TARGETPOSITION,
       payload:{

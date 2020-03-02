@@ -8,10 +8,10 @@ function App() {
   return (
     <Grid padded>
       <Grid.Row>
-        <Grid.Column width={4}>
+        <Grid.Column only='tablet computer' tablet={4} computer={4}>
           <Sidebar />
         </Grid.Column>
-        <Grid.Column width={12} style={{ height: '100vh', width: '100%' }}>
+        <Grid.Column mobile={16} tablet={4} computer={12} style={{ height: '100vh', width: '100%' }}>
           <Map />
         </Grid.Column>
       </Grid.Row>
