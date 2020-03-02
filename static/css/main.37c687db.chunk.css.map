@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.scss"],"names":[],"mappings":"AAAA,KACE,qBAAuB,CACxB,cAGC,uBAA2B,CAC3B,0BAA8B,CAFhC,sBAII,mBAAuB","file":"main.37c687db.chunk.css","sourcesContent":["body {\n  background-color: white;\n}\n\n.ui.grid>.row{\n  padding-top: 0px !important;\n  padding-bottom: 0px !important;\n  &>.column{\n    padding: 0px !important;\n  }\n}"]}
